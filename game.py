@@ -91,3 +91,33 @@ while(decision == ""):
 print()
 time.sleep(1)
 #            ---section end---           #
+
+# --- Sectoin Author:  Mik-Dundee --- #
+print("While exploring the territory for food, you come across a creature you've never seen")
+print()
+print("What do you do? ")
+print("1. Try to kill it for food source")
+print("2. Try to capture and keep it as a pet")
+print("3. Move on")
+print()
+decision = ""
+while (decision == "" ):
+    decision = input("Pick a number:    ")
+    if (decision == "1"):
+        print("BAD MOVE, the creature has great powers and you get injured")
+        player_health -= 35
+        print("Your health now:")
+        print(player_health)
+    elif (decision == "2"):
+        print("You do not have enough tools to capture the creature")
+        print()
+        print("Try again when you have acquired the pet-neutralizer item")
+        print(player_health)
+    elif (decision == "3"):
+        print("This is the wisest decisoin, you get added health")
+        player_health += 15
+        print("Your health now")
+        print(player_health)
+    print( )
+    time.sleep(1)
+    #   --- Section End ---                      
